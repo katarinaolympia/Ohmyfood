@@ -106,10 +106,22 @@ h2 {
 
 .fonctionnement :first-child{
     position: relative;
-    top: 15px;
-    font-size: 27px;
+    top: 18px;
+    font-size: 25px;
     color: grey;
     padding-right: 15px;
+    padding-left: 5px;
+}
+
+.fonctionnement span:first-child i{
+    font-size: 16px;
+    color: #9356DC;
+    position: absolute;
+    transform: translate3d(
+    -12px,
+    -11px,
+    0
+  );
 }
 
 .fonctionnement p{
