@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
  body {
   font-family: "Roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -50,7 +50,6 @@ header img {
       font-weight: 500;
       font-size: 22px;
       background-color: #ededed;
-      box-shadow: inset 1px 16px 29px -15px rgba(161,161,161,1);
   }
 
   #localisation i{
@@ -86,12 +85,7 @@ header img {
     font-size: 22px;
 background: linear-gradient(#FF79DA,#9356DC);
 border: 0px;
-}
-
-#section_titre_principal button:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
- box-shadow: 1px 16px 29px -1px rgba(147,86,220,1);
-
+box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78); /* Vérifier */
 }
 
 /* Section 2 : Fonctionnement */
@@ -115,12 +109,11 @@ h2 {
     display: flex;
     border: 1px solid #f7f7f7;
     border-radius: 20px;
-box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
+    box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78); /* à vérifier */
     background-color: #f7f7f7;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 50px;
-    padding: 5px 5px 5px;
+    margin-bottom: 20px;
 }
 
 .fonctionnement :first-child{
@@ -132,11 +125,15 @@ box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
     padding-left: 5px;
 }
 
-.fonctionnement span::first-letter {
-    font-size: 22px;
+.fonctionnement span:first-child i{
+    font-size: 16px;
     color: #9356DC;
     position: absolute;
-    /* Modifier position */
+    transform: translate3d(
+    -12px,
+    -12px,
+    0
+  );
 }
 
 .fonctionnement p{
@@ -232,7 +229,6 @@ line-height: 1.2;
 }
 
 /* Footer */
-
 footer {
     background-color: #3b3a3b;
     padding-left: 30px;

@@ -2,18 +2,18 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 992px){
  body {
   font-family: "Roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-  #bloc_page {
-    padding-left: 0px;
-    padding-right: 0px;
+ #bloc_page {
+    padding-left:0px;
+    padding-right:0px;
   }
 
   html,
@@ -22,26 +22,29 @@ body {
   padding: 0px;
 }
 
+
   /* Header */
-  header{
-      padding-top: 5px;
-    height:60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+header {
+  margin-top: 60px;
+  height: 100px;
+  margin-left: 60px;
+      padding-left: 35px;
+    padding-right: 35px;
+}
   
   header img{
-      height: 90%;
-      width: 90%;
+      height: 35%;
+      width: 35%;
   }
 
   header span i {
-      font-size: 20px;
+      font-size: 40px;
       font-weight: bold;
       position: absolute;
       left: 25px;
-      top: 20px;
+      top: 65px;
+      color: black;
   }
 
   /* Main */
@@ -49,41 +52,61 @@ body {
   #background_page {
       position: relative;
       background-color: rgba(245, 245, 245, 0.982);
-      margin-top: -55px;
+      margin-top: -45px;
       border-top-left-radius: 40px;
       border-top-right-radius: 40px;
       padding-bottom: 60px;
   }
 
   #photo_couverture {
-      height: 300px;
+      height: 350px;
       width: 100%;
       object-fit: cover;
   }
 
   h1, .carte {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
   }
 
   h1 {
       padding-top: 50px;
       font-family: "shrikhand";
-      font-size: 28px;
+      font-size: 64px;
+      text-align: center;
   }
 
 .fa-heart {
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
-    right: 35px;
-    top: 46px;
+    right: 65px;
+    top: 70px;
+}
+
+/* Carte */
+
+.carte {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 60px;
 }
 
 h2 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: rgb(94, 94, 94);
+}
+
+.bordure_titre {
+border-bottom: 4px solid #99E2D0;
+padding-bottom: 7px;
 }
 
 .menu {
@@ -92,7 +115,8 @@ h2 {
     padding: 1px 0px 2px 5px;
     margin-bottom: 15px;
     height: 70px;
-    /* ajouter box shadow*/
+    width: 350px;
+    box-shadow: 1px 16px 29px -1px rgba(199,199,199,1);
 }
 
 .menu h3 {
@@ -102,26 +126,27 @@ h2 {
     top: -4px;
 }
 
-.menu p {
-    display: inline-block;
+.menu p{
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: space-between;
     position: relative;
     top: -33px;
     font-size: 15px;
     font-weight: 300;
+    background-color: aqua;
 }
 
-.menu p:nth-child(3){
-    font-weight: 400;
-    position: relative;
-    right: -20px;
-    background-color: bisque;
+.menu p:last-child {
+    font-weight: 500;
     /* Modifier la place des prix */
 }
+
 
 /* Commander */
 
 #button {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 button  {
@@ -130,32 +155,40 @@ button  {
     padding: 15px 45px 15px 45px;
     border-radius: 35px;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
 background: linear-gradient(#FF79DA,#9356DC);
 border: 0px;
 box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78); /* Vérifier */
 }
 
+
 /* Footer */
 
 footer {
     background-color: #3b3a3b;
-    padding-left: 25px;
-    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
     color: white;
     font-size: 20px;
 }
 
 #footer_logo {
     filter: invert(100%);
-    height: 40%;
-    width: 40%;
+    height: 20%;
+    width: 20%;
     padding-top: 30px;
     padding-bottom: 20px;
 }
 
 .footer_flex {
     display: flex;
+    margin-right: 35px;
+}
+
+#footer_flex_desktop {
+  display:flex;
+  margin: auto;
+  margin-right: 35px;
 }
 
 .footer_flex p {
@@ -168,12 +201,9 @@ footer {
     padding-right: 10px;
 }
 
-footer p {
-    margin-top: 0;
-}
-
 footer a {
     text-decoration: none;
     color: white;
     margin-top: 0;
+    margin-left: 35px;
 }
