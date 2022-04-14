@@ -86,6 +86,7 @@ header img {
     font-size: 22px;
 background: linear-gradient(#FF79DA,#9356DC);
 border: 0px;
+cursor: pointer;
 }
 
 #section_titre_principal button:hover {
@@ -125,9 +126,8 @@ h2 {
 
 .fonctionnement {
     display: flex;
-    border: 1px solid #f7f7f7;
     border-radius: 20px;
-box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
+    box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
     background-color: #f7f7f7;
     font-size: 20px;
     font-weight: 500;
@@ -137,23 +137,42 @@ box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
 
 .fonctionnement :first-child{
     position: relative;
-    top: 18px;
-    font-size: 25px;
+    display: inline-block;
+    top: 20px;
+    font-size: 20px;
     color: grey;
     padding-right: 15px;
     padding-left: 5px;
+    transform: translate3d(
+    -20px,
+    0px,
+    0
+  );
 }
 
 .fonctionnement span::first-letter {
-    font-size: 22px;
-    color: #9356DC;
-    position: absolute;
-    /* Modifier position */
+    height: 30px;
+    width: 30px;
+    padding: 2px 7px 2px 7px;
+    border-radius: 50%;
+    font-weight: 400;
+    color: white;
+    border: 1px solid #9356DC;
+    background-color: #9356DC; 
 }
 
 .fonctionnement p{
-    padding-left: 10px;
     padding-right: 30px;
+    transform: translate3d(
+    -15px,
+    0px,
+    0
+  );
+}
+
+.fonctionnement:hover {
+  background-color: #ead9ff;
+  box-shadow: 10px 10px 79px -20px rgba(147,86,220,1);
 }
 
 /* Section 3 : restaurants */

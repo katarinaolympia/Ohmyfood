@@ -111,29 +111,39 @@ h2 {
 .fonctionnement :first-child{
     position: relative;
     top: 18px;
-    font-size: 23px;
+    font-size: 20px;
     color: grey;
     padding-right: 15px;
     padding-left: 5px;
-}
-
-.fonctionnement span:first-child i{
-    font-size: 16px;
-    color: #9356DC;
-    position: absolute;
     transform: translate3d(
-    -12px,
-    -11px,
+    -15px,
+    4px,
     0
   );
 }
 
 .fonctionnement p{
     padding-left: 0px;
+     transform: translate3d(
+    -12px,
+    2px,
+    0
+  );
 }
 
 .fonctionnement span:first-letter {
-    color: #9356DC;
+    height: 30px;
+    width: 30px;
+    padding: 2px 7px 2px 7px;
+    border-radius: 50%;
+    font-weight: 400;
+    color: white;
+    border: 1px solid #9356DC;
+    background-color: #9356DC; 
+}
+
+.fonctionnement:active {
+    background-color: #ead9ff;
 }
 
 /* Section 3 : restaurants */
