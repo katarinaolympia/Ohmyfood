@@ -43,7 +43,7 @@ header {
       font-weight: bold;
       position: absolute;
       left: 25px;
-      top: 75px;
+      top: 73px;
       color: black;
   }
 
@@ -110,6 +110,7 @@ padding-bottom: 7px;
 }
 
 .menu {
+    position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 1px 0px 2px 5px;
@@ -128,19 +129,18 @@ padding-bottom: 7px;
 
 .menu p{
     display: inline-flex;
-    vertical-align: middle;
-    justify-content: space-between;
     position: relative;
     top: -33px;
     font-size: 15px;
     font-weight: 300;
-    background-color: bisque;
 }
 
-.menu p:last-child {
+.menu span:last-child {
+    font-size: 15px;
     font-weight: 500;
-    background-color: aqua;
-    /* Modifier la place des prix */
+    position: absolute;
+    top: 39px;
+    right: 25px;
 }
 
 .menu:hover {
@@ -150,7 +150,7 @@ padding-bottom: 7px;
 /* Commander */
 
 #button {
-    margin-top: 0px;
+    margin-top: 40px;
 }
 
 button  {

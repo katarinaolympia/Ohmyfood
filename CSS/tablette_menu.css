@@ -34,8 +34,8 @@ header {
 }
   
   header img{
-      height: 35%;
-      width: 35%;
+      height: 45%;
+      width: 45%;
   }
 
   header span i {
@@ -43,7 +43,7 @@ header {
       font-weight: bold;
       position: absolute;
       left: 25px;
-      top: 65px;
+      top: 70px;
       color: black;
   }
 
@@ -52,7 +52,7 @@ header {
   #background_page {
       position: relative;
       background-color: rgba(245, 245, 245, 0.982);
-      margin-top: -45px;
+      margin-top: -85px;
       border-top-left-radius: 40px;
       border-top-right-radius: 40px;
       padding-bottom: 60px;
@@ -79,7 +79,7 @@ header {
 .fa-heart {
     font-size: 40px;
     position: absolute;
-    right: 65px;
+    right: 15px;
     top: 70px;
 }
 
@@ -110,6 +110,7 @@ padding-bottom: 7px;
 }
 
 .menu {
+    position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 1px 0px 2px 5px;
@@ -128,18 +129,18 @@ padding-bottom: 7px;
 
 .menu p{
     display: inline-flex;
-    vertical-align: middle;
-    justify-content: space-between;
     position: relative;
     top: -33px;
     font-size: 15px;
     font-weight: 300;
-    background-color: aqua;
 }
 
-.menu p:last-child {
+.menu span:last-child {
+    font-size: 15px;
     font-weight: 500;
-    /* Modifier la place des prix */
+    position: absolute;
+    top: 39px;
+    right: 15px;
 }
 
 

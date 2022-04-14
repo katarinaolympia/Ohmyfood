@@ -96,6 +96,10 @@ border: 0px;
 
 /* Section 2 : Fonctionnement */
 
+#section_fonctionnement, #section_restaurants {
+    padding: 20px 20px 30px 20px;
+}
+
 h2 {
   padding-top: 30px;
   text-align: center;
@@ -105,10 +109,18 @@ h2 {
 
 #section_fonctionnement 
 {
+  padding-top: 120px;
   display: flex;
   gap: 50px;
   justify-content: center;
   padding-bottom: 40px;
+  position: relative;
+}
+
+#section_fonctionnement h2 {
+  position: absolute;
+  justify-content: center;
+  top: -20px;
 }
 
 .fonctionnement {
@@ -156,11 +168,10 @@ box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
 
 #carte {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right:100px;
-    padding-bottom: 50px;
+    width: 100%;
 }
 
 /* Conteneur */
@@ -175,7 +186,7 @@ box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
     text-decoration: none;
     color: black;
     height: 280px;
-    width: calc(100%/2 - 20px);
+    width: 320px;
     box-shadow: 1px 16px 29px -1px rgba(199,199,199,1);
 }
 
@@ -256,7 +267,7 @@ footer {
 
 #footer_flex_desktop {
   display:flex;
-  margin: auto;
+  justify-content: flex-end;
   margin-right: 35px;
 }
 

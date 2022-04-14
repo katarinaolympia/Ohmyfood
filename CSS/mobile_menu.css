@@ -95,6 +95,7 @@ padding-bottom: 7px;
 }
 
 .menu {
+    position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 1px 0px 2px 5px;
@@ -118,11 +119,11 @@ padding-bottom: 7px;
     font-weight: 300;
 }
 
-.menu p:nth-child(3){
+.menu span:last-child {
     font-weight: 500;
-    position: relative;
-    right: -20px;
-    background-color: bisque;
+    position: absolute;
+    right: 25px;
+    bottom: 13px;
     /* Modifier la place des prix */
 }
 
@@ -167,7 +168,7 @@ footer {
 }
 
 .footer_flex p {
-    margin-top: 0px;
+    margin-top: 10px;
     padding-left: 5px;
 }
 
@@ -176,11 +177,10 @@ footer {
     padding-right: 10px;
 }
 
-footer p {
-    margin-top: 0;
-}
-
-footer a {
+footer a, footer span {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     text-decoration: none;
     color: white;
     margin-top: 0;
