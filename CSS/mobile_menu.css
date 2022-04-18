@@ -74,11 +74,15 @@ body {
       font-size: 28px;
   }
 
-.fa-heart {
-    font-size: 30px;
+.coeur {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 22px;
+    width: 24px;
     position: absolute;
-    right: 35px;
-    top: 46px;
+    top: 52px;
+    right: 40px;
+    overflow: visible;
 }
 
 h2 {

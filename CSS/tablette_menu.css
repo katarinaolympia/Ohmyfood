@@ -72,15 +72,19 @@ header {
   h1 {
       padding-top: 50px;
       font-family: "shrikhand";
-      font-size: 64px;
+      font-size: 44px;
       text-align: center;
   }
 
-.fa-heart {
-    font-size: 40px;
+.coeur {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 22px;
+    width: 36px;
     position: absolute;
-    right: 15px;
-    top: 70px;
+    top: 54px;
+    right: 60px;
+    overflow: visible;
 }
 
 /* Carte */
