@@ -188,7 +188,7 @@ h2 {
 #carte {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -275,8 +275,8 @@ svg {
 
  .coeur_animé {
   position: absolute;
-  right: 50px;
-  top: -43px;
+  right: 40px;
+  bottom: 38px;
   width: 26px;
   opacity: 0;
   stroke: none;

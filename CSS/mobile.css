@@ -243,8 +243,8 @@ svg {
 
  .coeur_animé {
   position: absolute;
-  right: 76px;
-  top: -43px;
+  right: 66px;
+  top: -38px;
   opacity: 0;
   stroke: none;
   fill: linear-gradient(#9356DC, #FF79DA);

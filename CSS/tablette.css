@@ -169,9 +169,9 @@ h2 {
 
 #carte {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
     margin: auto;
+    gap: 13px;
+    flex-wrap: wrap;
     padding-bottom: 50px;
 }
 
@@ -256,8 +256,8 @@ svg {
 
  .coeur_animé {
   position: absolute;
-  right: 75px;
-  top: -43px;
+  right: 66px;
+  bottom: 38px;
   opacity: 0;
   stroke: none;
   fill: linear-gradient(#9356DC, #FF79DA);
