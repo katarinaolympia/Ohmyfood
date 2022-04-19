@@ -83,19 +83,18 @@ header {
     width: 36px;
     position: absolute;
     top: 54px;
-    right: 60px;
+    right: 80px;
     overflow: visible;
 }
 
 /* Carte */
 
-.carte {
+#carte {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding-bottom: 60px;
 }
 
@@ -179,11 +178,40 @@ padding-bottom: 7px;
      transform:rotate(360deg);
 }
 
+/* Animation du menu */
+
+.menu_animation {
+    animation-name: slideInUp;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both; /* Permet l'apparition prograssive */
+}
+
+@keyframes slideInUp {
+    from{
+        opacity: 0;
+        transform: translate3d(0px,10px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.animation_delay_plats {
+    animation-delay: 2s;
+}
+
+.animation_delay_desserts {
+    animation-delay: 4s;
+}
+
 
 /* Commander */
 
 #button {
-    margin-top: 0px;
+    margin-top: 30px;
 }
 
 button  {
