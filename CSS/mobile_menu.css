@@ -98,6 +98,8 @@ border-bottom: 4px solid #99E2D0;
 padding-bottom: 7px;
 }
 
+/* Menu */
+
 .menu {
     position: relative;
     background-color: white;
@@ -121,20 +123,58 @@ padding-bottom: 7px;
     top: -33px;
     font-size: 15px;
     font-weight: 300;
+
+    /* Propriétés dépassement du texte */
+    text-overflow: ellipsis;
+    width: 260px;
+    overflow:hidden;
+    white-space: nowrap;
+    transition:width ease 0.7s;
 }
 
-.menu span:last-child {
+.menu span /* Prix */ {
     font-weight: 500;
     position: absolute;
-    right: 25px;
+    right: 15px;
     bottom: 13px;
-    /* Modifier la place des prix */
+}
+
+/* Sélecteur */
+
+.menu div {
+    position:absolute;
+    top:0;
+    right:0;
+    width:0px;
+    height:70px;
+    border-radius:5px 0 0 5px;
+    background:#009688;
+    transition:width ease 0.5s;
+    text-align:center;
+    padding-top:25px;
+    overflow:hidden;
+}
+
+.menu svg {
+    width:25px;
+    height:25px;
+    display:inline-block;
+    transition:transform ease 0.5s;
+    
+}
+
+.menu:hover div{
+    width: 75px;
+}
+
+.menu:hover svg {
+     transform:rotate(360deg);
 }
 
 /* Commander */
 
 #button {
-    margin-top: 40px;
+    padding-top: 30px;
 }
 
 button  {

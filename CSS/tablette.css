@@ -39,6 +39,60 @@ header img {
   width: 300px;
 }
 
+/* Loader */
+#loader_mask {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: transparent;
+    opacity: 0;
+
+    /* Propriétés pour cacher le loader */
+    animation-name:hide-loader-mask; /* Lien avec le keyframe hide */
+    animation-timing-function:linear;
+    animation-duration:3s;
+}
+
+#loader {
+    /* Création du loader */
+    border: 14px solid transparent;
+    border-top: 14px solid #9356DC;
+    border-bottom: 14px solid #FF79DA;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 1;
+
+     /* Placement du loader */
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0; right: 0;bottom: 0;
+
+    /* Propriétés d'animation */
+    animation-name: spin;
+    animation-timing-function: linear; /* Fonction timing de l'animation */
+    animation-duration: 3s; /* Durée de l'animation */
+    animation-iteration-count: infinite; /* Nombre de cycles */
+}
+
+/* Animation du loader */
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hide-loader-mask {
+    0% { 
+        opacity: 1;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
   /* Main */
 
   /* Localisation */
@@ -154,7 +208,7 @@ h2 {
     padding-right: 20px;
 }
 
-.fonctionnement:active {
+.fonctionnement:hover {
     background-color: #ead9ff;
 }
 
@@ -263,7 +317,7 @@ svg {
   fill: linear-gradient(#9356DC, #FF79DA);
  }
 
- .coeur_animé:active {
+ .coeur_animé:hover {
    opacity: 1;
    transition: 400ms ease-in-out;
  }

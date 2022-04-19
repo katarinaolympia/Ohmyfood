@@ -139,7 +139,7 @@ padding-bottom: 7px;
     font-weight: 300;
 }
 
-.menu span:last-child {
+.menu span {
     font-size: 15px;
     font-weight: 500;
     position: absolute;
@@ -149,6 +149,38 @@ padding-bottom: 7px;
 
 .menu:hover {
     box-shadow: 1px 16px 51px -10px rgba(133,133,133,1);
+}
+
+/* Sélecteur - Animation */
+
+.menu div {
+    position:absolute;
+    top:0;
+    right:0;
+    width:0px;
+    height:70px;
+    border-radius:5px 0 0 5px;
+    background:#009688;
+    transition:width ease 0.5s;
+    text-align:center;
+    padding-top:25px;
+    overflow:hidden;
+}
+
+.menu svg {
+    width:25px;
+    height:25px;
+    display:inline-block;
+    transition:transform ease 0.5s;
+    
+}
+
+.menu:hover div{
+    width: 75px;
+}
+
+.menu:hover svg {
+     transform:rotate(360deg);
 }
 
 /* Commander */
