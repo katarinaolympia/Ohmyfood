@@ -39,57 +39,109 @@ header img {
   width: 300px;
 }
 
-  /* Loader */
+/* Loader */
 #loader_mask {
     position: fixed;
+    margin: auto;
     left: 0; right: 0; top: 0; bottom: 0;
-    background: transparent;
-    opacity: 0;
-
-    /* Propriétés pour cacher le loader */
-    animation-name:hide-loader-mask; /* Lien avec le keyframe hide */
-    animation-timing-function:linear;
-    animation-duration:3s;
 }
 
 #loader {
-    /* Création du loader */
-    border: 14px solid transparent;
-    border-top: 14px solid #9356DC;
-    border-bottom: 14px solid #FF79DA;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    z-index: 1;
+    /* Conteneur principal */
+    width: 150px;
+    height: 150px;
 
      /* Placement du loader */
-    margin: auto;
     position: absolute;
-    top: 0;left: 0; right: 0;bottom: 0;
+    margin: auto;
+    top: 0;left: 0; right: 0; bottom: 0;
 
-    /* Propriétés d'animation */
-    animation-name: spin;
-    animation-timing-function: linear; /* Fonction timing de l'animation */
-    animation-duration: 3s; /* Durée de l'animation */
-    animation-iteration-count: infinite; /* Nombre de cycles */
+    /* Propriétés pour cacher le loader */
+    animation-name:hide_loader_mask; /* Lien avec le keyframe hide */
 }
 
-/* Animation du loader */
-@keyframes spin {
-    0% { 
-        transform: rotate(0deg);
-    }
-    100% { 
-        transform: rotate(360deg);
-    }
+#loader div {
+    /* Propriétés div : création du carré */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background: #9356DC;
+    opacity: 0;
 }
 
-@keyframes hide-loader-mask {
+#loader div:nth-child(1) {
+    /* Animation carré n°1 */
+    top: 0px;
+    left: 0px;
+    animation-name: loader_anim;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 6;
+}
+
+#loader div:nth-child(2) {
+    /* Animation carré n°2*/
+    top: 0px;
+    left: 85px;
+    animation: loader_anim 1.4s ease-in-out 6;
+}
+
+#loader div:nth-child(3) {
+    top: 0px;
+    left: 170px;
+    animation: loader_anim 1s ease-in-out 6;
+}
+
+#loader div:nth-child(4) {
+    /* Colonne 2 */
+    top: 85px;
+    left: 0px;
+    animation: loader_anim 0.7s ease-in-out 6;
+}
+
+#loader div:nth-child(5) {
+    top: 85px;
+    left: 85px;
+    animation: loader_anim 1.6s ease-in-out 6;
+}
+
+#loader div:nth-child(6) {
+    top: 85px;
+    left: 170px;
+    animation: loader_anim 1.3s ease-in-out 6;
+}
+
+#loader div:nth-child(7) {
+   /* Colonne 3 */
+    top: 170px;
+    left: 0px;
+    animation: loader_anim 0.9s ease-in-out 6;
+}
+
+#loader div:nth-child(8) {
+    top: 170px;
+    left: 85px;
+    animation: loader_anim 1.5s ease-in-out 6;
+}
+
+#loader div:nth-child(9) {
+    top: 170px;
+    left: 170px;
+    animation: loader_anim 1.3s ease-in-out 6;
+}
+
+@keyframes loader_anim {
+    0%, 100% { opacity: 1;}
+    40%, 90% { opacity: 0.1;}
+}
+
+@keyframes hide_loader_mask {
     0% { 
         opacity: 1;
     }
     100% { 
-        opacity: 1;
+        opacity: 0;
     }
 }
 
