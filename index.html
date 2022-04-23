@@ -30,8 +30,24 @@
   </head>
 
   <body>
-    <div id="bloc_page">
 
+    <!--  Loader  -->
+    <div id="loader_mask">
+      <div id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="bloc_page">
+      
       <!--  Header   -->
 
       <header>
@@ -39,16 +55,6 @@
           <img src="images/logo/ohmyfood@2x.svg" alt="Logo" id="logo" />
         </div>
       </header>
-
-      <!--  Loader  -->
-      <div id="loader_mask">
-        <div id="loader">
-         <div></div><div></div><div></div>
-         <div></div><div></div><div></div>
-          <div></div><div></div><div></div>    
-        </div>
-      </div>  
-
 
       <!--  Main   -->
 
@@ -69,16 +75,15 @@
           <p id="baseline">
             Découvrez des restaurants d'exception, sélectionnés par nos soins
           </p>
-          <a href="#section_restaurants"> <button>Explorer nos restaurants</button></a>
+          <button>Explorer nos restaurants</button>
         </section>
 
         <!--  Section 2 : Fonctionnement   -->
 
-        
         <section id="section_fonctionnement">
           <h2>Fonctionnement</h2>
           <div class="fonctionnement">
-            <span>1</i></span>
+            <span>1</span>
             <span><i class="fa-solid fa-mobile-screen"></i></span>
             <p>Choisissez un restaurant</p>
           </div>
@@ -100,10 +105,9 @@
           <h2>Restaurants</h2>
 
           <div id="carte">
-
             <!--  Image 1   -->
 
-            <a href="la_palette.html">
+            <a href="La_palette.html">
               <img
                 src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="La palette du goût"
@@ -112,37 +116,55 @@
               <div>
                 <span>La palette du goût </span>
                 <span>Ménilmontant</span>
-            
               </div>
             </a>
-                
-                   <!-- Animation Coeur -->
-                <div class="animation_coeur">
-                  
-                  <!-- svg coeur principal -->
-                  <div class="coeur_principal">
-                   <svg class="coeur_principal" viewBox="0 0 512 512" width="100" title="heart">
-                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /></svg>
-                  </div>
 
-                  <!-- svg coeur animé -->
-                   <div class="coeur_animé">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <defs>
-                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                     <stop offset="0" stop-color="#9356dc" />
-                     <stop offset="0.25" stop-color="#a85adc" />
-                     <stop offset="0.5" stop-color="#cf64dc" />
-                     <stop offset="0.75" stop-color="#f172da" />
-                     <stop offset="1" stop-color="#ff79da" />
+            <!-- Animation Coeur -->
+            <div class="animation_coeur">
+              <!-- svg coeur principal -->
+              <div class="coeur_principal">
+                <svg class="coeur_principal" viewBox="0 0 512 512" width="100">
+                  <path
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                </svg>
+              </div>
+
+              <!-- svg coeur animé -->
+              <div class="coeur_animé">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="heart"
+                  class="svg-inline--fa fa-heart fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient-fill-1"
+                      x1="0"
+                      y1="0"
+                      x2="800"
+                      y2="0"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
                     </linearGradient>
-                    </defs>
-                     <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                    </svg>
-                  </div>
-                  
-                </div>
-              
+                  </defs>
+                  <path
+                    fill="url(#gradient-fill-1) #9356dc"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
 
             <!--  Image 2   -->
 
@@ -155,38 +177,55 @@
               <div>
                 <span>La note enchantée </span>
                 <span>Charonne</span>
-            
               </div>
             </a>
 
-                <!-- Animation Coeur -->
-                <div class="animation_coeur">
-                  
-                  <!-- svg coeur principal -->
-                  <div class="coeur_principal">
-                   <svg class="coeur_principal" viewBox="0 0 512 512" width="100" title="heart">
-                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /></svg>
-                  </div>
+            <!-- Animation Coeur -->
+            <div class="animation_coeur">
+              <!-- svg coeur principal -->
+              <div class="coeur_principal">
+                <svg class="coeur_principal" viewBox="0 0 512 512" width="100">
+                  <path
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                </svg>
+              </div>
 
-                  <!-- svg coeur animé -->
-                   <div class="coeur_animé">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <defs>
-                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                     <stop offset="0" stop-color="#9356dc" />
-                     <stop offset="0.25" stop-color="#a85adc" />
-                     <stop offset="0.5" stop-color="#cf64dc" />
-                     <stop offset="0.75" stop-color="#f172da" />
-                     <stop offset="1" stop-color="#ff79da" />
+              <!-- svg coeur animé -->
+              <div class="coeur_animé">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="heart"
+                  class="svg-inline--fa fa-heart fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient-fill-2"
+                      x1="0"
+                      y1="0"
+                      x2="800"
+                      y2="0"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
                     </linearGradient>
-                    </defs>
-                     <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                    </svg>
-                  </div>
-
-                </div>
-              
-              
+                  </defs>
+                  <path
+                    fill="url(#gradient-fill-2) #9356dc"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
 
             <!--  Image 3   -->
 
@@ -198,37 +237,55 @@
               <div>
                 <span>À la française</span>
                 <span>Cité rouge</span>
-
               </div>
             </a>
-                
-                   <!-- Animation Coeur -->
-                <div class="animation_coeur">
-                  
-                  <!-- svg coeur principal -->
-                  <div class="coeur_principal">
-                   <svg class="coeur_principal" viewBox="0 0 512 512" width="100" title="heart">
-                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /></svg>
-                  </div>
 
-                  <!-- svg coeur animé -->
-                   <div class="coeur_animé">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <defs>
-                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                     <stop offset="0" stop-color="#9356dc" />
-                     <stop offset="0.25" stop-color="#a85adc" />
-                     <stop offset="0.5" stop-color="#cf64dc" />
-                     <stop offset="0.75" stop-color="#f172da" />
-                     <stop offset="1" stop-color="#ff79da" />
+            <!-- Animation Coeur -->
+            <div class="animation_coeur">
+              <!-- svg coeur principal -->
+              <div class="coeur_principal">
+                <svg class="coeur_principal" viewBox="0 0 512 512" width="100">
+                  <path
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                </svg>
+              </div>
+
+              <!-- svg coeur animé -->
+              <div class="coeur_animé">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="heart"
+                  class="svg-inline--fa fa-heart fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient-fill-3"
+                      x1="0"
+                      y1="0"
+                      x2="800"
+                      y2="0"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
                     </linearGradient>
-                    </defs>
-                     <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                    </svg>
-                  </div>
-                  
-                </div>
-              
+                  </defs>
+                  <path
+                    fill="url(#gradient-fill-3) #9356dc"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
 
             <!--  Image 4   -->
 
@@ -240,41 +297,58 @@
               <div>
                 <span>Le délice des sens</span>
                 <span>Folie-Méricourt</span>
-            
               </div>
             </a>
-                
-                   <!-- Animation Coeur -->
-                <div class="animation_coeur">
-                  
-                  <!-- svg coeur principal -->
-                  <div class="coeur_principal">
-                   <svg class="coeur_principal" viewBox="0 0 512 512" width="100" title="heart">
-                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /></svg>
-                  </div>
 
-                  <!-- svg coeur animé -->
-                   <div class="coeur_animé">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <defs>
-                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                     <stop offset="0" stop-color="#9356dc" />
-                     <stop offset="0.25" stop-color="#a85adc" />
-                     <stop offset="0.5" stop-color="#cf64dc" />
-                     <stop offset="0.75" stop-color="#f172da" />
-                     <stop offset="1" stop-color="#ff79da" />
+            <!-- Animation Coeur -->
+            <div class="animation_coeur">
+              <!-- svg coeur principal -->
+              <div class="coeur_principal">
+                <svg class="coeur_principal" viewBox="0 0 512 512" width="100">
+                  <path
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                </svg>
+              </div>
+
+              <!-- svg coeur animé -->
+              <div class="coeur_animé">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="heart"
+                  class="svg-inline--fa fa-heart fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient-fill-4"
+                      x1="0"
+                      y1="0"
+                      x2="800"
+                      y2="0"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
                     </linearGradient>
-                    </defs>
-                     <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                    </svg>
-                  </div>
-                  
-                </div>
-              
+                  </defs>
+                  <path
+                    fill="url(#gradient-fill-4) #9356dc"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-
       <!--  Footer  -->
 
       <footer>
@@ -287,6 +361,7 @@
           <div class="footer_flex">
             <span><i class="fa-solid fa-handshake-simple"></i></span>
             <p>Devenir partenaire</p>
+            
           </div>
           <span>Mentions légales</span>
           <a href="mailto:contact@ohmyfood.com">Contact</a>

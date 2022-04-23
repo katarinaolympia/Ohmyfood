@@ -76,16 +76,40 @@ header {
       text-align: center;
   }
 
-.coeur {
-    fill: transparent;
-    stroke: black;
-    stroke-width: 22px;
-    width: 36px;
-    position: absolute;
-    top: 54px;
-    right: 80px;
-    overflow: visible;
+/* Animation îcone coeur */
+.animation_coeur {
+  position: relative;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 22;
+  cursor: pointer;
 }
+
+svg {
+    overflow: visible;
+    width: 30px;
+    position: absolute;
+  }
+
+ .coeur_principal {
+    position: absolute;
+    right: 45px;
+    bottom: 20px;
+ }
+
+ .coeur_animé {
+  position: absolute;
+  right: 120px;
+  bottom: 70px;
+  stroke: #9356DC;
+  opacity: 0;
+  stroke: none;
+ }
+
+ .coeur_animé:hover {
+   opacity: 1;
+   transition: 400ms ease-in-out;
+ }
 
 /* Carte */
 
@@ -131,11 +155,16 @@ padding-bottom: 7px;
 }
 
 .menu p{
-    display: inline-flex;
     position: relative;
-    top: -33px;
+    top: -19px;
     font-size: 15px;
     font-weight: 300;
+
+    /* Propriétés dépassement du texte */
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    transition:width ease 0.7s;
 }
 
 .menu span {
@@ -172,6 +201,10 @@ padding-bottom: 7px;
 
 .menu:hover div{
     width: 75px;
+}
+
+.menu:hover p{
+    width:calc(100% - 70px);
 }
 
 .menu:hover svg {

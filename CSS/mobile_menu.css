@@ -74,16 +74,40 @@ body {
       font-size: 28px;
   }
 
-.coeur {
-    fill: transparent;
-    stroke: black;
-    stroke-width: 22px;
-    width: 24px;
-    position: absolute;
-    top: 52px;
-    right: 40px;
-    overflow: visible;
+/* Animation îcone coeur */
+.animation_coeur {
+  position: relative;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 22;
+  cursor: pointer;
 }
+
+svg {
+    overflow: visible;
+    width: 30px;
+    position: absolute;
+  }
+
+ .coeur_principal {
+    position: absolute;
+    right: 25px;
+    bottom: 11px;
+ }
+
+ .coeur_animé {
+  position: absolute;
+  right: 80px;
+  bottom: 52px;
+  stroke: #9356DC;
+  opacity: 0;
+  stroke: none;
+ }
+
+ .coeur_animé:hover {
+   opacity: 1;
+   transition: 400ms ease-in-out;
+ }
 
 h2 {
     text-transform: uppercase;
@@ -118,15 +142,16 @@ padding-bottom: 7px;
 }
 
 .menu p {
-    display: inline-block;
     position: relative;
-    top: -33px;
+    top: -19px;
     font-size: 15px;
     font-weight: 300;
+}
 
+.menu h3, .menu p {
+    
     /* Propriétés dépassement du texte */
     text-overflow: ellipsis;
-    width: 260px;
     overflow:hidden;
     white-space: nowrap;
     transition:width ease 0.7s;
@@ -160,11 +185,14 @@ padding-bottom: 7px;
     height:25px;
     display:inline-block;
     transition:transform ease 0.5s;
-    
 }
 
 .menu:hover div{
     width: 75px;
+}
+
+.menu:hover p{
+    width:calc(100% - 70px);
 }
 
 .menu:hover svg {

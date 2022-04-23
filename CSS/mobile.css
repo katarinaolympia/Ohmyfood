@@ -41,8 +41,17 @@ body {
 /* Loader */
 #loader_mask {
     position: fixed;
-    margin: auto;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0;
+    background-color: #ffffff;
+    opacity: 0;
+    animation-timing-function:linear;
+    animation-duration:3s;
+    
+     /* Propriétés pour cacher le loader */
+    animation-name: hide_loader_mask; /* Lien avec le keyframe hide */
 }
 
 #loader {
@@ -54,9 +63,6 @@ body {
     position: absolute;
     margin: auto;
     top: 0;left: 0; right: 0; bottom: 0;
-
-    /* Propriétés pour cacher le loader */
-    animation-name:hide_loader_mask; /* Lien avec le keyframe hide */
 }
 
 #loader div {
@@ -76,58 +82,58 @@ body {
     animation-name: loader_anim;
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 6;
+    animation-iteration-count: 4;
 }
 
 #loader div:nth-child(2) {
     /* Animation carré n°2*/
     top: 0px;
     left: 45px;
-    animation: loader_anim 1.4s ease-in-out 6;
+    animation: loader_anim 1.4s ease-in-out 4;
 }
 
 #loader div:nth-child(3) {
     top: 0px;
     left: 90px;
-    animation: loader_anim 1s ease-in-out 6;
+    animation: loader_anim 1s ease-in-out 4;
 }
 
 #loader div:nth-child(4) {
     /* Colonne 2 */
     top: 45px;
     left: 0px;
-    animation: loader_anim 0.7s ease-in-out 6;
+    animation: loader_anim 0.7s ease-in-out 4;
 }
 
 #loader div:nth-child(5) {
     top: 45px;
     left: 45px;
-    animation: loader_anim 1.6s ease-in-out 6;
+    animation: loader_anim 1.6s ease-in-out 4;
 }
 
 #loader div:nth-child(6) {
     /* Colonne 3 */
     top: 45px;
     left: 90px;
-    animation: loader_anim 1.3s ease-in-out 6;
+    animation: loader_anim 1.3s ease-in-out 4;
 }
 
 #loader div:nth-child(7) {
     top: 100px;
     left: 0px;
-    animation: loader_anim 0.9s ease-in-out 6;
+    animation: loader_anim 0.9s ease-in-out 4;
 }
 
 #loader div:nth-child(8) {
     top: 100px;
     left: 45px;
-    animation: loader_anim 1.5s ease-in-out 6;
+    animation: loader_anim 1.5s ease-in-out 4;
 }
 
 #loader div:nth-child(9) {
     top: 100px;
     left: 90px;
-    animation: loader_anim 1.3s ease-in-out 6;
+    animation: loader_anim 1.3s ease-in-out 4;
 }
 
 @keyframes loader_anim {
@@ -136,19 +142,15 @@ body {
 }
 
 @keyframes hide_loader_mask {
-    0% { 
-        opacity: 1;
-    }
-    100% { 
-        opacity: 0;
-    }
+    0% { opacity: 0;}
+    100% { opacity:1;}
 }
 
   /* Main */
 
   /* Localisation */
 
-  #localisation{
+  #localisation {
       display: flex;
         justify-content: center;
       color: #3b3a3b;
@@ -187,9 +189,16 @@ body {
     border-radius: 35px;
     color: white;
     font-size: 20px;
-background: linear-gradient(#FF79DA,#9356DC);
-border: 0px;
-box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78);
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: 0px;
+    box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78);
+    filter:brightness(85%);
+    transition:filter ease 0.7s, box-shadow ease 0.7s;
+}
+
+#section_titre_principal button:hover {
+  filter:brightness(100%);
+  box-shadow: 1px 16px 29px -1px rgba(147,86,220,1);
 }
 
 /* Section 2 : Fonctionnement */
