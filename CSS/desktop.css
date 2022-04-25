@@ -237,7 +237,7 @@ h2 {
 .fonctionnement {
     display: flex;
     border-radius: 20px;
-    box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);/* à vérifier */
+    box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);
     background-color: #f7f7f7;
     font-size: 20px;
     font-weight: 500;
@@ -331,6 +331,7 @@ h2 {
 /* Sticker */
 .sticker_nouveau {
     position: absolute;
+    height: 34px;
     background-color: #99E2D0;
     color: #009f77;
     font-weight: 500;
@@ -385,8 +386,8 @@ svg {
 
  .coeur_animé {
   position: absolute;
-  right: 40px;
-  bottom: 38px;
+  right: 50px;
+  bottom: 43px;
   width: 26px;
   opacity: 0;
   stroke: none;
