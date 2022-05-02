@@ -85,13 +85,12 @@ header img {
     font-size: 22px;
     background: linear-gradient(#FF79DA,#9356DC);
     border: 0px;
-    box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78);
-    filter:brightness(85%);
-    transition:filter ease 0.7s, box-shadow ease 0.7s;
+    transition: ease 0.7s, box-shadow ease 0.7s;
 }
 
 #section_titre_principal button:hover {
-  filter:brightness(100%);
+  filter:brightness(110%);
+  background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 1px 16px 29px -1px rgba(147,86,220,1);
 }
 
@@ -164,6 +163,10 @@ h2 {
 .fonctionnement:hover {
     background-color: #ead9ff;
 }
+
+.fonctionnement:hover i {
+      color: #9356DC;
+    }
 
 /* Section 3 : restaurants */
 

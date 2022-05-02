@@ -159,12 +159,6 @@ padding-bottom: 7px;
     top: -19px;
     font-size: 15px;
     font-weight: 300;
-
-    /* Propriétés dépassement du texte */
-    text-overflow: ellipsis;
-    overflow:hidden;
-    white-space: nowrap;
-    transition:width ease 0.7s;
 }
 
 .menu span {
@@ -196,15 +190,28 @@ padding-bottom: 7px;
     height:25px;
     display:inline-block;
     transition:transform ease 0.5s;
-    
 }
 
 .menu:hover div{
     width: 75px;
 }
 
+.menu:hover h3, .menu:hover p {
+    /* Propriétés dépassement du texte */
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    transition:width ease 0.5s;
+}
+.menu:hover h3 {
+    width: calc(100% - 80px);
+}
 .menu:hover p{
-    width:calc(100% - 70px);
+    width:calc(100% - 120px);
+}
+
+.menu:hover span {
+    width: calc(100% - 255px);
 }
 
 .menu:hover svg {
@@ -254,9 +261,15 @@ button  {
     border-radius: 35px;
     color: white;
     font-size: 24px;
-background: linear-gradient(#FF79DA,#9356DC);
-border: 0px;
-box-shadow: 64px 67px 70px -32px rgba(41,41,41,0.78); /* Vérifier */
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: 0px;
+    transition: ease 0.7s, box-shadow ease 0.7s;
+}
+
+button:hover {
+    filter:brightness(110%);
+    background: linear-gradient(#9356DC, #FF79DA);
+    box-shadow: 1px 16px 29px -1px rgba(147,86,220,1);
 }
 
 
