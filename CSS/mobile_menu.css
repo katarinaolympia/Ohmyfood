@@ -176,6 +176,7 @@ padding-bottom: 7px;
     height:25px;
     display:inline-block;
     transition:transform ease 0.5s;
+    margin-left: -12px;
 }
 
 .menu:hover div{
@@ -214,7 +215,7 @@ padding-bottom: 7px;
     animation-name: slideInUp;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-fill-mode: both; /* Permet l'apparition prograssive */
+    animation-fill-mode: both; /* Permet l'apparition progressive */
 }
 
 @keyframes slideInUp {

@@ -190,6 +190,7 @@ padding-bottom: 7px;
     height:25px;
     display:inline-block;
     transition:transform ease 0.5s;
+    margin-left: -12px;
 }
 
 .menu:hover div{
