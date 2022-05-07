@@ -141,6 +141,7 @@
     margin-bottom: 50px;
     padding: 5px 5px 5px;
     cursor: pointer;
+    transition: background-color ease-in 0.8s;
   }
 
   .fonctionnement :first-child {
@@ -172,7 +173,7 @@
 
   .fonctionnement:hover {
     background-color: #ead9ff;
-    box-shadow: 10px 10px 79px -20px rgba(147, 86, 220, 1);
+
   }
 
   .fonctionnement:hover i {
