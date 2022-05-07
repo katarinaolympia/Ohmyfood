@@ -232,7 +232,7 @@ line-height: 1.2;
     font-weight: 300;
 }
 
-/* Animation îcone coeur */
+/* Animation icone coeur */
 .animation_coeur {
   position: relative;
   fill: transparent;
@@ -305,4 +305,5 @@ footer a, footer span {
     text-decoration: none;
     color: white;
     margin-top: 0;
+}
 }
