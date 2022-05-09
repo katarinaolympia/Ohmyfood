@@ -3,39 +3,39 @@
 }
 
 @media screen and (max-width: 767px) {
- body {
-  font-family: "Roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
+  body {
+    font-family: "Roboto", "Trebuchet MS", "Lucida Sans Unicode",
+      "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
 
   #bloc_page {
-      width: 100%;
-      margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
     padding-left: 0px;
     padding-right: 0px;
   }
 
   html,
-body {
-  margin: 0px;
-  padding: 0px;
-}
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
 
   /* Header */
-  header{
-      padding-top: 5px;
-    height:60px;
+  header {
+    padding-top: 5px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-  header img{
-      height: 90%;
-      width: 90%;
+
+  header img {
+    height: 90%;
+    width: 90%;
   }
 
   /* Main */
@@ -43,139 +43,132 @@ body {
   /* Localisation */
 
   #localisation {
-      display: flex;
-        justify-content: center;
-      color: #3b3a3b;
-      font-weight: 500;
-      background-color: #ededed;
-      box-shadow: inset 1px 16px 29px -15px rgba(161,161,161,1);
+    display: flex;
+    justify-content: center;
+    color: #3b3a3b;
+    font-weight: 500;
+    background-color: #ededed;
+    box-shadow: inset 1px 16px 29px -15px rgba(161, 161, 161, 1);
   }
 
-  #localisation i{
-      font-size: 18px;
-      position: relative;
-      padding-right: 15px;
-      padding-top: 15px;
+  #localisation i {
+    font-size: 18px;
+    position: relative;
+    padding-right: 15px;
+    padding-top: 15px;
   }
 
   /* Section 1 : titre principal */
 
-  #section_titre_principal{
-      text-align: center;
-      background-color: #f7f7f7;
-      padding: 30px 20px 40px 20px;
+  #section_titre_principal {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 30px 20px 40px 20px;
   }
 
-  h1{
-      font-size: 33px;
+  h1 {
+    font-size: 33px;
   }
 
-  #baseline{
-      font-size: 20px;
-      color: grey;
-      padding-bottom: 20px;
+  #baseline {
+    font-size: 20px;
+    color: grey;
+    padding-bottom: 20px;
   }
 
-#section_titre_principal button {
+  #section_titre_principal button {
     padding: 20px 20px 20px 25px;
     border-radius: 35px;
     color: white;
     font-size: 20px;
-    background: linear-gradient(#FF79DA,#9356DC);
+    background: linear-gradient(#ff79da, #9356dc);
     border: 0px;
     transition: ease 0.7s, box-shadow ease 0.7s;
-}
+  }
 
-#section_titre_principal button:hover {
-  filter:brightness(110%);
-  background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 1px 16px 29px -1px rgba(147,86,220,1);
-}
+  #section_titre_principal button:hover {
+    filter: brightness(110%);
+    background: linear-gradient(#9356dc, #ff79da);
+    box-shadow: 1px 16px 29px -1px rgba(147, 86, 220, 1);
+  }
 
-/* Section 2 : Fonctionnement */
+  /* Section 2 : Fonctionnement */
 
-#section_fonctionnement, #section_restaurants {
+  #section_fonctionnement,
+  #section_restaurants {
     padding: 20px 20px 30px 20px;
-}
+  }
 
-h2 {
+  h2 {
     font-size: 28px;
-}
+  }
 
-.fonctionnement {
+  .fonctionnement {
     margin-top: 30px;
     display: flex;
     border: 1px solid #f7f7f7;
     border-radius: 20px;
-    box-shadow: 10px 10px 29px 0px rgba(176,176,176,1);
+    box-shadow: 10px 10px 29px 0px rgba(176, 176, 176, 1);
     background-color: #f7f7f7;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
     transition: background-color ease-in 0.8s, border ease-in 0.9s;
-}
+  }
 
-.fonctionnement :first-child{
+  .fonctionnement :first-child {
     position: relative;
     top: 18px;
     font-size: 20px;
     color: grey;
     padding-right: 15px;
     padding-left: 5px;
-    transform: translate3d(
-    -15px,
-    4px,
-    0
-  );
-}
+    transform: translate3d(-15px, 4px, 0);
+  }
 
-.fonctionnement p{
+  .fonctionnement p {
     padding-left: 0px;
-     transform: translate3d(
-    -12px,
-    2px,
-    0
-  );
-}
+    transform: translate3d(-12px, 2px, 0);
+  }
 
-.fonctionnement span:first-letter {
+  .fonctionnement span:first-letter {
     height: 30px;
     width: 30px;
     padding: 2px 7px 2px 7px;
     border-radius: 50%;
     font-weight: 400;
     color: white;
-    border: 1px solid #9356DC;
-    background-color: #9356DC; 
-}
+    border: 1px solid #9356dc;
+    background-color: #9356dc;
+  }
 
-.fonctionnement:hover {
+  .fonctionnement:hover {
     background-color: #ead9ff;
     border: 3px solid #ead9ff;
-}
+  }
 
-.fonctionnement:hover i {
-      color: #9356DC;
-    }
+  .fonctionnement:hover i {
+    color: #9356dc;
+  }
 
-/* Section 3 : restaurants */
-#section_restaurants{
+  /* Section 3 : restaurants */
+  #section_restaurants {
     background-color: #f5f5f5;
     padding-bottom: 50px;
-}
+  }
 
-/* Zone flex */
-#carte {
+  /* Zone flex */
+  #carte {
     display: flex;
     flex-direction: column;
-}
+  }
 
-#carte a:first-child {
+  #carte a:first-child {
     margin-top: 15px;
-}
+  }
 
-/* Conteneur */
-#carte a {
+  /* Conteneur */
+  #carte a {
     position: relative;
     width: 100%;
     height: 260px;
@@ -186,22 +179,22 @@ h2 {
     background-color: #ffff;
     text-decoration: none;
     color: black;
-    box-shadow: 1px 16px 29px -1px rgba(199,199,199,1);
-}
+    box-shadow: 1px 16px 29px -1px rgba(199, 199, 199, 1);
+  }
 
-/* Image */
-#carte img {
+  /* Image */
+  #carte img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
+  }
 
-/* Sticker */
-.sticker_nouveau {
+  /* Sticker */
+  .sticker_nouveau {
     position: absolute;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #009f77;
     font-weight: 500;
     padding: 10px;
@@ -209,101 +202,102 @@ h2 {
     border-radius: 5px;
     right: 30px;
     top: 0px;
-}
+  }
 
-/* Conteneur hors image */
-#carte a *:not(img) {
-margin-left: 10px;
-padding-top: 5px;
-display: flex;
-flex-direction: column;
-line-height: 1.2;
-}
+  /* Conteneur hors image */
+  #carte a *:not(img) {
+    margin-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
 
-/* Titre */
-#carte a span:first-of-type {
+  /* Titre */
+  #carte a span:first-of-type {
     font-size: 22px;
     font-weight: 600;
-}
+  }
 
-/* Texte */
-#carte a span:nth-of-type(2) {
+  /* Texte */
+  #carte a span:nth-of-type(2) {
     font-size: 20px;
     font-weight: 300;
-}
+  }
 
-/* Animation icone coeur */
-.animation_coeur {
-  position: relative;
-  fill: transparent;
-  stroke: black;
-  stroke-width: 20;
-  cursor: pointer;
-}
+  /* Animation icone coeur */
+  .animation_coeur {
+    position: relative;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20;
+    cursor: pointer;
+  }
 
-svg {
+  svg {
     overflow: visible;
     width: 26px;
     position: absolute;
   }
 
- .coeur_principal {
+  .coeur_principal {
     position: absolute;
     right: 20px;
     bottom: 6px;
- }
+  }
 
- .coeur_animé {
-  position: absolute;
-  right: 76px;
-  bottom: 43px;
-  opacity: 0;
-  stroke: none;
-  fill: linear-gradient(#9356DC, #FF79DA);
- }
+  .coeur_animé {
+    position: absolute;
+    right: 76px;
+    bottom: 43px;
+    opacity: 0;
+    stroke: none;
+    fill: url(#gradient-fill-1) #9356dc;
+  }
 
- .coeur_animé:hover {
-   opacity: 1;
-   transition: 400ms ease-in-out;
- }
+  .coeur_animé:hover {
+    opacity: 1;
+    transition: 400ms ease-in-out;
+  }
 
-/* Footer */
-footer {
+  /* Footer */
+  footer {
     background-color: #3b3a3b;
     padding-left: 25px;
     padding-bottom: 30px;
     color: white;
     font-size: 20px;
-}
+  }
 
-#footer_logo {
+  #footer_logo {
     filter: invert(100%);
     height: 40%;
     width: 40%;
     padding-top: 30px;
     padding-bottom: 20px;
-}
+  }
 
-.footer_flex {
+  .footer_flex {
     display: flex;
-}
+  }
 
-.footer_flex p {
+  .footer_flex p {
     margin-top: 10px;
     padding-left: 5px;
-}
+  }
 
-.footer_flex i {
+  .footer_flex i {
     font-size: 20px;
     padding-right: 10px;
-}
+  }
 
-footer a, footer span {
+  footer a,
+  footer span {
     display: flex;
     flex-direction: column;
     padding: 10px;
     text-decoration: none;
     color: white;
     margin-top: 0;
-}
+  }
 }
